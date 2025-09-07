@@ -1,22 +1,5 @@
-import Image from 'next/image';
-
-interface Post {
-  id: number;
-  title: { rendered: string };
-  date: string;
-  author: number;
-  featured_media: number;
-}
-
-interface Author {
-  id: number;
-  name: string;
-}
-
-interface Media {
-  id: number;
-  source_url: string;
-}
+import Image from 'next/image'
+import {Post} from '../types/wp-pkg'
 
 export default async function LatestPosts() {
   // گرفتن آخرین ۳ پست

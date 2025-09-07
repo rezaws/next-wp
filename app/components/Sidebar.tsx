@@ -11,8 +11,8 @@ import {
 
 const navItems = [
   { label: 'خانه', href: '/dashboard', icon: HomeIcon },
-  { label: 'پروفایل', href: '/profile', icon: UserCircleIcon },
-  { label: 'تنظیمات', href: '/settings', icon: Cog6ToothIcon },
+  { label: 'پروفایل', href: '/dashboard/profile', icon: UserCircleIcon },
+  { label: 'تنظیمات', href: '/dashboard/settings', icon: Cog6ToothIcon },
   { label: 'خروج', href: '/logout', icon: ArrowRightOnRectangleIcon },
 ];
 

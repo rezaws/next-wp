@@ -1,33 +1,11 @@
-'use client'
-// components/UserPackageStatus.tsx
-import { useEffect, useState } from 'react';
+import { Ads } from "../types/wp-pkg"
 
-type AdsStatus = {
-  ads_id: number;
-  used: number;
-  limit: number;
-  expiry: string;
-};
+import React from 'react'
 
-export default function Ads() {
-  const [status, setStatus] = useState<AdsStatus | null>(null);
-
-  useEffect(() => {
-    fetch('/wp-json/wp/v2/ads', {
-      headers: { Authorization: `Bearer ${yourJWT}` },
-    })
-      .then(res => res.json())
-      .then(data => setStatus(data));
-  }, []);
-
-  if (!status) return <p>در حال بارگذاری...</p>;
-
+export default function AdsComp() {
   return (
-    <div>
-      <h3>پکیج فعلی شما</h3>
-      <p>شناسه پکیج: {status.ads_id}</p>
-      <p>تعداد استفاده‌شده: {status.used} / {status.limit}</p>
-      <p>تاریخ انقضا: {status.expiry}</p>
+    <div className="relative isolate bg-gray-200">
+       <h1 className="text-blue-800"> Ads</h1>
     </div>
-  );
+  )
 }

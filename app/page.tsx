@@ -3,8 +3,9 @@ import React from 'react'
 import Header from './components/header'
 import Search from './components/search'
 import CategoryGrid from './components/JobCategoryGrid'
-
+import Packages from './packages/page'
 import LatestPosts from './components/latestPosts'
+import AdsComp from './components/ads'
 
 export default function home() {
   return (
@@ -27,6 +28,12 @@ export default function home() {
     </div>
     <div>
       <LatestPosts />
+    </div>
+    <div>
+      <Packages />
+    </div>
+    <div>
+      <AdsComp />
     </div>
     </>
   )

@@ -11,7 +11,7 @@ export async function POST(req: Request) {
   }
 
   try {
-    const res = await fetch('http://localhost:10010/wp-json/gholly/v1/register', {
+    const res = await fetch('http://localhost:10010/wp-json/wp/v2/users/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, email, password }),
